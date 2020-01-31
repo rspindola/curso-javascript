@@ -106,7 +106,7 @@
     'Operação "[OPERATOR]" não permitida!'
     */
     function showErrorMessage(params) {
-        
+        return 'Operação ' + params + ' não permitida!'
     }
 
     /*
@@ -115,7 +115,9 @@
     - Declare 3 variáveis: "number1" e "number2", iniciando com valor zero, e
     "operationSignal", sem valor por enquanto.
     */
-    // ?
+    var number1 = 0
+    var number2 = 0
+    var operationSignal;
 
     /*
     PASSO 2:
@@ -123,7 +125,8 @@
     variável chamada "sum", que receba a função "calculator", passando por
     parâmetro a variável que recebeu o sinal da operação.
     */
-    // ?
+    operationSignal = '+'
+    var sum = calculator(operationSignal)
 
     /*
     PASSO 3:
